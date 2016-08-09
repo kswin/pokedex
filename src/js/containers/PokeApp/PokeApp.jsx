@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import './PokeApp.scss';
 import { PokeCard } from '../../components';
 import * as PokeActions from '../../actions/PokeActions';
 
@@ -30,7 +31,7 @@ class PokeApp extends Component {
       return <div>Loading...</div>
     }
 
-    return <div>{this.renderPokeCards()}</div>;
+    return <div className="grid">{this.renderPokeCards()}</div>;
   }
 }
 

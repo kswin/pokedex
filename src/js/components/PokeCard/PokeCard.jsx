@@ -45,16 +45,17 @@ export default class PokeCard extends Component {
     const { description, level, name, imageUrl, type } = this.props;
 
     return (
-      <div className="card">
-        <div className="header">
+      <div className="pokeCard">
+        <div className="pokeCard-row pokeCard-header">
           <div className="poke-pic-container">
-            <img
-              src={imageUrl}
-              alt="" />
+            <img src={imageUrl} alt="" />
           </div>
-          <div className="level">lvl {level}</div>
+          <div className="pokeCard-row level-container">
+            <span className="level-label">lvl</span>
+            <span className="level-number">{level}</span>
+          </div>
         </div>
-        <div className="summary">
+        <div className="pokeCard-row summary">
           <h1>{name}</h1><Badge type={type} />
           <p>{description}</p>
         </div>

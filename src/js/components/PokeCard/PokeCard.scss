@@ -1,12 +1,32 @@
-.card {
+.pokeCard {
   width: 318.77px;
   height: 398px;
-  background-color: '#FFF';
+  background-color: #FFF;
+  position: relative;
+  padding: 20px;
+  margin-top: 75px;
 }
 
+.pokeCard-row {
+  min-height: 70px;
+}
+
+.level-container {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  color: #D8D8D8;
+  font-weight: bold;
+}
+
+.level-number {
+  font-size: 60px;
+}
 .poke-pic-container {
   width: 136px;
   height: 133px;
+  position: absolute;
+  top: -68px;
 
   img {
     max-width: 100%;
