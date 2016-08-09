@@ -3,43 +3,24 @@
 
 ## Getting Started
 
-### Installation
+### Installation & Run
 
 ```
 $ git clone
-$ cd
+$ cd pokedex
 $ npm install
+$ npm start
+
+// on a separate tab
+
 ```
+$ cd pokedex
+$ npm run api
 
-## Development
-
-There are two ways in which you can build and run the web app:
-
-* Build once for (ready for ***Production***):
-  * `$ npm run build`
-  * Open `build/index.html` through the local webserver
-
-
-* Hot reloading via webpack dev server:
-  * `$ npm start`
-  * Point your browser to http://localhost:3000/, page hot reloads automatically when there are changes
-
-## Testing
-
-To execute all unit tests, use:
-
-```sh
-npm run test
 ```
-
-To run unit tests continuously during development (watch tests), use:
-
-```sh
-npm run test:watch
-```
-
-## Run it locally
-
 ## TODO
 
 - [ ] Write unit tests
+- [ ] Add Badge, Button, NavBar, Pill, Popup and Slide components
+- [ ] Fix styling on the card
+- [ ] Finish filter
