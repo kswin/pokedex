@@ -2,14 +2,12 @@ import React from 'react';
 import { Route, IndexRoute, Redirect } from 'react-router';
 
 import App from './components/App';
-import FriendListApp from './containers/FriendListApp/FriendListApp';
 import PokeApp from './containers/PokeApp/PokeApp';
 import NotFoundView from './views/NotFoundView';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={FriendListApp} />
-    <Route path="pokedex" component={PokeApp} />
+    <IndexRoute component={PokeApp} />
     <Route path="404" component={NotFoundView} />
     <Redirect from="*" to="404" />
   </Route>

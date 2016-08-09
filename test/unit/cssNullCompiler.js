@@ -8,3 +8,4 @@ require.extensions['.less'] = noop;
 require.extensions['.jpg'] = noop;
 require.extensions['.png'] = noop;
 require.extensions['.woff'] = noop;
+require.extensions['.tff'] = noop;
