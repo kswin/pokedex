@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { uniqueId } from 'lodash';
 
 import POKE_TYPES from '../../constants/PokeTypes';
 import Badge from '../Badge/Badge';
@@ -28,11 +29,11 @@ export default class PokeCard extends Component {
       return <div>No known moves</div>;
     }
 
-    moves.forEach((move) => {
+    return moves.map(({ name, type }) => {
       return (
-        <div key={move.name}>
-          <div>{move.name}</div>
-          <Badge type={move.type} />
+        <div key={uniqueId(`${name}_`)}>
+          <div>{name}</div>
+          <Badge type={type} />
         </div>
       );
     });
@@ -44,7 +45,7 @@ export default class PokeCard extends Component {
       level,
       name,
       imageUrl,
-      type
+      type,
     } = this.props;
 
     return (

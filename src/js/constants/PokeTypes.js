@@ -6,6 +6,7 @@ const POKE_TYPES = [
   'psychic',
   'bug',
   'normal',
+  'dark',
 ];
 
 export default POKE_TYPES;

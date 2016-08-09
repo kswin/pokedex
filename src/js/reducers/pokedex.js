@@ -17,7 +17,7 @@ export default function (state = initialState, action) {
     case types.RECEIVE_POKEMON: {
       // TODO: Error response
 
-      const { pokemon } = action.payload;
+      const pokemon = action.payload;
       return {
         ...state,
         loading: false,

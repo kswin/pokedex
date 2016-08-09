@@ -17,8 +17,10 @@ class PokeApp extends Component {
   }
 
   renderPokeCards() {
-    const { pokedex: pokemon } = this.props;
-    return pokemon.forEach((poke) => <PokeCard {...poke}/>);
+    const { pokedex } = this.props;
+    return pokedex.pokemon.map((poke) => {
+      return <PokeCard key={poke.name} {...poke} />;
+    });
   }
 
   render () {
@@ -27,7 +29,8 @@ class PokeApp extends Component {
     if (pokedex.loading) {
       return <div>Loading...</div>
     }
-    {this.renderPokeCards()}
+
+    return <div>{this.renderPokeCards()}</div>;
   }
 }
 

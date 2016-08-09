@@ -44,7 +44,6 @@ export function loadPokemon() {
     return fetch('http://localhost:3004/pokemon')
       .then(response => response.json())
       .then(json => {
-        console.log('json', json);
         return dispatch(receivePokemon(json))
       });
   }
