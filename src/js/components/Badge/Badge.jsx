@@ -1,20 +1,9 @@
 import React, { Component, PropTypes } from 'react';
+import POKE_TYPES from '../../constants/PokeTypes';
 
 export default class Badge extends Component {
   static propTypes = {
-    /**
-     * The poke type.
-     * FIXME: Array is duplicated in PokeCard. Create an exportable constant.
-     */
-    type: PropTypes.oneOf([
-      'fairy',
-      'ghost',
-      'fire',
-      'water',
-      'psychic',
-      'bug',
-      'normal',
-    ]),
+    type: PropTypes.oneOf(POKE_TYPES),
   };
 
   render() {

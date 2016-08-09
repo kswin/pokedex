@@ -4,7 +4,7 @@
     "type": "fairy",
     "description": "This impish Pokémon is friendly and peaceful. It is believed to live inside Mt. Moon, although very few have ever been seen by humans.",
     "level": 23,
-    "imageUrl": "/img/clefairy.png",
+    "imageUrl": "/images/clefairy.png",
     "moves": [{ "name": "Disarming Voice", "type": "fairy" },  { "name": "Double Slap", "type": "normal"}]
   },
   {
@@ -12,7 +12,7 @@
     "type": "ghost",
     "description": "Gengar, the Shadow Pokémon. Gengar hides in the shadows. If a Gengar is nearby, it is said to feel ten degrees colder than normal.",
     "level": 32,
-    "imageUrl": "/img/gengar.png",
+    "imageUrl": "/images/gengar.png",
     "moves": [{ "name": "Lick", "type": "ghost" },  { "name": "Shadow Punch", "type": "ghost"}]
   },
   {
@@ -20,7 +20,7 @@
     "type": "fire",
     "description": "Growlithe, a Puppy Pokémon of pleasant demeanor and great diligence. It drives enemies away with barks and bites.",
     "level": 18,
-    "imageUrl": "/img/growlithe.png",
+    "imageUrl": "/images/growlithe.png",
     "moves": [{ "name": "Bite", "type": "dark" },  { "name": "Ember", "type": "fire"}]
   },
   {
@@ -28,7 +28,7 @@
     "type": "water",
     "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage. Can fire a Hyper Beam from its mouth.",
     "level": 26,
-    "imageUrl": "/img/gyarados.png",
+    "imageUrl": "/images/gyarados.png",
     "moves": [{ "name": "Aqua Tail", "type": "water" },  { "name": "Hydro Pump", "type": "water"}]
   },
   {
@@ -36,7 +36,7 @@
     "type": "psychic",
     "description": "Kadabra, a Psychic Pokémon. The evolved form of Abra. It employs powerful telekinetic attacks.",
     "level": 24,
-    "imageUrl": "/img/kadabra.png",
+    "imageUrl": "/images/kadabra.png",
     "moves": [{ "name": "Confusion", "type": "psychic" },  { "name": "Psybeam", "type": "psychic"}]
   },
   {
@@ -44,7 +44,7 @@
     "type": "bug",
     "description": "Its claws are sharp as swords, and it is a powerful flyer. This Pokémon is rarely seen by humans and almost never captured.",
     "level": 18,
-    "imageUrl": "/img/scyther.png",
+    "imageUrl": "/images/scyther.png",
     "moves": [{ "name": "Fury Cutter", "type": "bug" },  { "name": "Razor Wind", "type": "normal"}]
   }]
 }

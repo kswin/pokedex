@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'thin_pixel';
+  src: url('/fonts/thin_pixel-7.ttf');
+}
+
 body {
   background: #f1f1f1;
   padding-top: 30px;
+  font-family: 'thin_pixel';
 }

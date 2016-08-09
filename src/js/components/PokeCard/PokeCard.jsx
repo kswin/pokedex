@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { uniqueId } from 'lodash';
 
+import './PokeCard.scss';
+
 import POKE_TYPES from '../../constants/PokeTypes';
 import Badge from '../Badge/Badge';
 
@@ -40,20 +42,16 @@ export default class PokeCard extends Component {
   }
 
   render() {
-    const {
-      description,
-      level,
-      name,
-      imageUrl,
-      type,
-    } = this.props;
+    const { description, level, name, imageUrl, type } = this.props;
 
     return (
-      <div>
+      <div className="card">
         <div className="header">
-          <img
-            src={imageUrl}
-            alt="" />
+          <div className="poke-pic-container">
+            <img
+              src={imageUrl}
+              alt="" />
+          </div>
           <div className="level">lvl {level}</div>
         </div>
         <div className="summary">
