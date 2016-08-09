@@ -1,15 +1,16 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from '../reducers';
 import { persistState } from 'redux-devtools';
+import thunkMiddleware from 'redux-thunk';
 
 export default function configureStore(initialState) {
 
-  let middleware = applyMiddleware();
+  let middleware = applyMiddleware(thunkMiddleware);
   let enhancer;
 
   if (process.env.NODE_ENV !== 'production') {
 
-    let middlewares = [require('redux-immutable-state-invariant')()];
+    let middlewares = [require('redux-immutable-state-invariant')(), thunkMiddleware];
     middleware = applyMiddleware(...middlewares);
 
     let getDebugSessionKey = function () {

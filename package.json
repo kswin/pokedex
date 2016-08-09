@@ -1,8 +1,8 @@
 {
-  "name": "redux-webpack-es6-boilerplate",
-  "description": "A starter project for modern React apps with Redux",
-  "version": "0.7.1",
-  "author": "Nick S. Plekhanov <nick.plekhanov@gmail.com>",
+  "name": "Pokedex",
+  "description": "A fun pokedex to showcase the usage of Redux and React",
+  "version": "0.0.1",
+  "author": "Kim Win <kim.win.dev@gmail.com>",
   "license": "MIT",
   "keywords": [
     "react",
@@ -12,19 +12,14 @@
     "hot",
     "babel",
     "webpack",
-    "boilerplate",
-    "starter"
+    "pokemon"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nicksp/redux-webpack-es6-boilerplate.git"
-  },
-  "bugs": "https://github.com/nicksp/redux-webpack-es6-boilerplate/issues",
   "scripts": {
     "clean:build": "node ./bin/clean.js createdir",
     "build:html": "node ./bin/buildHtml.js",
     "prestart": "node ./bin/clean.js",
     "start": "webpack-dev-server --config ./config/webpack.config.dev.js --hot --inline --progress",
+    "api": "json-server --watch ./src/data/pokemon.json --port 3004",
     "prebuild": "npm run clean:build && npm run build:html",
     "build": "export NODE_ENV=production & NODE_ENV=production & webpack -p --config ./config/webpack.config.prod.js --progress",
     "lint": "eslint config src/js/** --ext .js",
@@ -52,6 +47,7 @@
     "jquery": "2.2.2",
     "jscs": "2.10.1",
     "jsdom": "8.2.0",
+    "json-server": "0.8.17",
     "mocha": "2.4.5",
     "node-sass": "3.7.0",
     "postcss-loader": "0.8.2",
@@ -73,6 +69,7 @@
     "autoprefixer": "6.3.6",
     "classnames": "2.2.3",
     "history": "2.1.0",
+    "isomorphic-fetch": "2.2.1",
     "lodash": "4.11.1",
     "react": "15.0.1",
     "react-dom": "15.0.1",
