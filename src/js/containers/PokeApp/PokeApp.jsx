@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { PokeCard } from '../../components';
-import * as FriendsActions from '../../actions/FriendsActions'; //FIXME: Rename
+import * as PokeActions from '../../actions/PokeActions';
 
 class PokeApp extends Component {
   static propTypes = {
@@ -42,7 +42,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(FriendsActions, dispatch),
+    actions: bindActionCreators(PokeActions, dispatch),
   };
 }
 

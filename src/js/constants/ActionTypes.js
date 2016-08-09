@@ -1,6 +1,2 @@
-export const ADD_FRIEND = 'ADD_FRIEND';
-export const STAR_FRIEND = 'STAR_FRIEND';
-export const DELETE_FRIEND = 'DELETE_FRIEND';
-
 export const REQUEST_POKEMON = 'REQUEST_POKEMON';
 export const RECEIVE_POKEMON = 'RECEIVE_POKEMON';
