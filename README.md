@@ -12,12 +12,12 @@ $ npm install
 $ npm start
 
 // on a separate tab
-
-```
 $ cd pokedex
 $ npm run api
 
+Open localhost:3000
 ```
+
 ## TODO
 
 - [ ] Write unit tests
